@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Espresso",
+      "type": "Strong",
+      "price": 2.5,
+      "image": "espresso.png",
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Cappuccino",
+      "type": "Milk",
+      "price": 3.0,
+      "image": "cappuccino.png",
+      "rating": 4.5
+    },
+    {
+      "id": "3",
+      "name": "Latte",
+      "type": "Milk",
+      "price": 3.5,
+      "image": "latte.png",
+      "rating": 4.5
+    },
+    {
+      "id": "4",
+      "name": "Americano",
+      "type": "Black",
+      "price": 2.0,
+      "image": "americano.png",
+      "rating": 4.5
+    }
+  ]
+}
