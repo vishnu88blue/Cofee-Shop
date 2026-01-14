@@ -27,10 +27,6 @@ const Offers = () => {
               height: 140,
               borderRadius: 10,
               marginVertical: 10,
-              borderTopLeftRadius: 20,
-              borderBottomRightRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomLeftRadius: 20,
               marginRight: 20,
             }}
           />

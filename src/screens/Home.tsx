@@ -12,7 +12,7 @@ const Home = () => {
   const { height } = useWindowDimensions();
 
   return (
-    <View style={{ backgroundColor: '##F9F9F9' }}>
+    <View>
       <LinearGradient
         colors={['#303030', '#111111']}
         start={{ x: 0, y: 1 }}
