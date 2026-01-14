@@ -1,10 +1,14 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Pressable } from 'react-native';
 import React from 'react';
 import cofeeData from '../mockdata/cofeeItems.json';
 import { Plus } from 'lucide-react-native';
 import { Star } from 'lucide-react-native';
+import { ParamListBase, useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const ItemList = ({ value }: { value: string }) => {
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
+
   return (
     <View
       style={{
@@ -14,7 +18,7 @@ const ItemList = ({ value }: { value: string }) => {
       }}
     >
       {cofeeData.data.map((item, index) => (
-        <View
+        <Pressable
           id="individual-items"
           key={index}
           style={{
@@ -23,6 +27,9 @@ const ItemList = ({ value }: { value: string }) => {
             borderRadius: 20,
             marginBottom: 35,
           }}
+          onPress={() =>
+            navigation.navigate('ItemDetails', { itemName: item.name ?? '' })
+          }
         >
           <View
             id="rating-abs-pos"
@@ -99,7 +106,7 @@ const ItemList = ({ value }: { value: string }) => {
               }}
             >{`$ ${item.price}`}</Text>
           </View>
-        </View>
+        </Pressable>
       ))}
     </View>
   );
