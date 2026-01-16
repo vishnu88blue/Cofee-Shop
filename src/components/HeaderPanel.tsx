@@ -1,6 +1,6 @@
 import { View, Text, Pressable } from 'react-native';
 import React, { useState } from 'react';
-import { ChevronLeft } from 'lucide-react-native';
+import { ChevronLeft, Ellipsis } from 'lucide-react-native';
 import { Heart } from 'lucide-react-native';
 import { ParamListBase, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -39,12 +39,16 @@ const HeaderPanel = ({
           {headerText ?? 'test'}
         </Text>
       </View>
-      {isLikeButtonRequired && (
+      {isLikeButtonRequired ? (
         <Pressable onPress={() => setIsFavorite(!isFavorite)}>
           <Heart
             color={isFavorite ? 'red' : 'black'}
             fill={isFavorite ? 'red' : 'white'}
           />
+        </Pressable>
+      ) : (
+        <Pressable onPress={() => navigation.navigate('DashboardTabs')}>
+          <Ellipsis color={'black'} fill={'white'} />
         </Pressable>
       )}
     </View>

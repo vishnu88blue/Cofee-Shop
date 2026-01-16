@@ -3,8 +3,13 @@ import React, { useState } from 'react';
 import HeaderPanel from '../components/HeaderPanel';
 import { useScreenDimensions } from '../hooks/use-screen-dimensions';
 import cofeeDataDetailed from '../mockdata/cofeeItemsDetailed.json';
-import { useRoute } from '@react-navigation/native';
+import {
+  ParamListBase,
+  useNavigation,
+  useRoute,
+} from '@react-navigation/native';
 import { Bean, Milk, Motorbike, Star } from 'lucide-react-native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const ItemDetails = () => {
   const { width } = useScreenDimensions();
@@ -19,6 +24,7 @@ const ItemDetails = () => {
   const [cofeeSize, setCofeeSize] = useState<string>(
     cofeeDetails?.sizes[0] ?? '',
   );
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   return (
     <View
@@ -230,6 +236,7 @@ const ItemDetails = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}
+          onPress={() => navigation.navigate('OrderDetails')}
         >
           <Text
             style={{
