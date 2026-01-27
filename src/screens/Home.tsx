@@ -59,6 +59,7 @@ const Home = () => {
         <View
           style={{
             marginTop: 50,
+            marginBottom: 40,
             flexDirection: 'row',
             justifyContent: 'space-between',
             gap: 20,

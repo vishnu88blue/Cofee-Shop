@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Espresso",
+      "type": "Strong",
+      "price": 2.5,
+      "image": "espresso.png",
+      "rating": 4.5,
+      "totalRatings": 1519,
+      "sizes": ["S", "M", "L"],
+      "description": "Espresso is made by forcing hot water through finely ground coffee beans under high pressure. It uses a small amount of water and no milk, resulting in a strong, concentrated coffee with a rich flavor and a layer of foam (crema) on top. It is the base for many other coffee drinks.",
+      "beverageType": "Hot/Cold"
+    },
+    {
+      "id": "2",
+      "name": "Cappuccino",
+      "type": "Milk",
+      "price": 3.0,
+      "image": "cappuccino.png",
+      "rating": 4.5,
+      "totalRatings": 1220,
+      "sizes": ["S", "M", "L"],
+      "beverageType": "Hot/Cold",
+      "description": "Cappuccino is prepared using equal parts espresso, steamed milk, and milk foam. First, a shot of espresso is brewed. Then steamed milk is added, followed by a thick layer of foam on top. It has a balanced taste with strong coffee flavor and creamy texture."
+    },
+    {
+      "id": "3",
+      "name": "Latte",
+      "type": "Milk",
+      "price": 3.5,
+      "image": "latte.png",
+      "rating": 4.5,
+      "totalRatings": 1106,
+      "sizes": ["S", "M", "L"],
+      "beverageType": "Hot/Cold",
+      "description": "Latte is made with one shot of espresso and a larger amount of steamed milk, with a small layer of foam on top. The milk softens the strong coffee taste, making it smooth and creamy. It is less strong than cappuccino and great for beginners."
+    },
+    {
+      "id": "4",
+      "name": "Americano",
+      "type": "Black",
+      "price": 2.0,
+      "image": "americano.png",
+      "rating": 4.5,
+      "totalRatings": 925,
+      "sizes": ["S", "M", "L"],
+      "beverageType": "Hot/Cold",
+      "description": "Americano is made by diluting a shot of espresso with hot water. It has a similar strength to drip coffee but retains the espresso's flavor. It is a popular choice for those who prefer a less intense coffee without milk."
+    }
+  ]
+}

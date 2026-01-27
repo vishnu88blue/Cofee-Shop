@@ -13,11 +13,7 @@ const Offers = () => {
     { id: '3', title: 'Special Offer 3' },
   ];
   return (
-    <ScrollView
-      horizontal
-      contentContainerStyle={{ marginTop: 30 }}
-      showsHorizontalScrollIndicator={false}
-    >
+    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       {offersList.map(offer => (
         <Pressable key={offer.id}>
           <Image
